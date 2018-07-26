@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MyMarriageApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
@@ -27,7 +26,5 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
 # marriage-app
 Raghu Weds Manisha
->>>>>>> 69e9a5bf8c039d8965674d4e3ae259006c7f125f
