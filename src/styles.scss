@@ -1,5 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
 .navbar-brand {
-    font-family: 'Sacramento';
+  font-family: "Sacramento";
+  font-size: 32px;
+  color: deeppink;
+}
+.navbar-default .navbar-nav > li {
+  font-family: "Sacramento";
+  font-size: 20px;
+
+}
+.navbar-default .navbar-nav > li > a {
+    color: deeppink;
 }
