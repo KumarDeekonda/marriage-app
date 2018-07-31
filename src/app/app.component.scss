@@ -1,4 +1,62 @@
-.navbar-default .navbar-brand {
-    color: deeppink;
-    font-size:24px 
+.cover-page {
+  height: 900px;
+  margin-top: -25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  .overlay {
+    z-index: 0;
+    // position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .display-tc {
+    color: #fff;
+    font-family: "Pacifico", cursive;
+    h1 {
+      margin-bottom: 0px;
+      line-height: 1.5;
+      font-size: 55px;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 20px 20px;
+      background: #fff !important;
+      color: #f14e95;
+      border: none !important;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+ 
+}
+.groom-bride{
+  h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #6caddf;
+    font-family: "Sacramento";
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #828282;
+  }
+  .couple-half{
+    width: 50%;
+    float: left;
+    .groom{
+      float: right;
+      margin-right: 5px;
+    }
+    .bride{
+      float: left;
+      margin-left: 5px;
+    } }
 }
