@@ -32,10 +32,9 @@
       text-transform: uppercase;
     }
   }
- 
 }
-.groom-bride{
-  h2{
+.groom-bride {
+  h2 {
     font-size: 40px;
     margin-bottom: 10px;
     line-height: 1.5;
@@ -43,20 +42,138 @@
     color: #6caddf;
     font-family: "Sacramento";
   }
-  p{
+  p {
     font-size: 18px;
     line-height: 1.5;
     color: #828282;
   }
-  .couple-half{
+  .heart {
+    position: absolute;
+    top: 4em;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    animation: pulse 1s ease infinite;
+    i {
+      font-size: 20px;
+      background: #fff;
+      padding: 20px;
+      color: #f14e95;
+      border-radius: 50%;
+    }
+  }
+  .couple-half {
     width: 50%;
     float: left;
-    .groom{
+    p {
+      margin-bottom: 20px;
+    }
+    .groom {
       float: right;
       margin-right: 5px;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
     }
-    .bride{
+    .desc-groom {
+      padding-right: 180px;
+      text-align: right;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+    .bride {
       float: left;
       margin-left: 5px;
-    } }
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+    }
+    .desc-bride {
+      padding-left: 180px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 30px;
+      color: #6caddf;
+      font-family: "Sacramento";
+    }
+    @media (max-width: 768px) {
+      .groom {
+        margin-right: 5px;
+      }
+      .desc-groom {
+        padding-right: 20px;
+        text-align: right;
+      }
+      .bride {
+        margin-left: 5px;
+      }
+      .desc-bride {
+        padding-left: 20px;
+        text-align: left;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+.event {
+  h2 {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #f14e95;
+    font-family: "Sacramento";
+  }
+  span {
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .display-t {
+    height: 700px;
+    display: table;
+    width: 100%;
+    .display-tc {
+      height: 700px;
+      display: table;
+      width: 100%;
+    }
+    .event-wrap {
+      border: 15px solid #b0f2d3;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 50px;
+      width: 100%;
+      float: left;
+      border-radius: 4px;
+      h3 {
+        color: #be9c16;
+        font-size: 30px;
+        line-height: 25px;
+      }
+    }
+    .eventy-wrap {
+      border: 15px solid #eee0d5;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 50px;
+      width: 100%;
+      float: right;
+      border-radius: 4px;
+      h3 {
+        color: #be9c16;
+        font-size: 30px;
+        line-height: 25px;
+      }
+    }
+  }
 }
