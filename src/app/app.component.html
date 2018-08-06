@@ -10,7 +10,6 @@
             </button>
             <a class="navbar-brand" href="">Raghu &amp; Manisha</a>
         </div>
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -25,7 +24,7 @@
                     <a href="#album">Photo Album</a>
                 </li>
                 <li>
-                    <a href="#">Live</a>
+                    <a href="http://www.seeliveevents.com/livevideo" target="_blank">Live</a>
                 </li>
             </ul>
         </div>
@@ -43,38 +42,19 @@
                     <div class="display-tc animate-box fadeIn animated-fast" data-animate-effect="fadeIn">
                         <h1>Raghu &amp; Manisha</h1>
                         <h2>We Are Getting Married</h2>
-
                         <div class="simply-countdown simply-countdown-one">
                             <div class="simply-section simply-days-section">
+                                <countdown-timer class="timer" [end]="'2018-08-27 24:00:00'"></countdown-timer>
                                 <div>
-                                    <countdown-timer [end]="'2018-08-13 24:00:00'"></countdown-timer>
-                                    <count-down units="Days | Hours | Minutes | Seconds | Milliseconds" end="August 13, 2018"></count-down>
-                                    <count-down units="Year | Month | Days | Hours | Minutes | Seconds"  end="July 22, 2019"></count-down>
-                                    <!-- <span class="simply-amount">66</span>
-                                    <span class="simply-word">days</span> -->
-                                </div>
-                            </div>
-                            <div class="simply-section simply-hours-section">
-                                <div>
-                                    <!-- <span class="simply-amount">5</span>
-                                    <span class="simply-word">hours</span> -->
-                                </div>
-                            </div>
-                            <div class="simply-section simply-minutes-section">
-                                <div>
-                                    <!-- <span class="simply-amount">30</span>
-                                    <span class="simply-word">minutes</span> -->
-                                </div>
-                            </div>
-                            <div class="simply-section simply-seconds-section">
-                                <div>
-                                    <!-- <span class="simply-amount">28</span>
-                                    <span class="simply-word">seconds</span> -->
+                                    <span class="simply-word" style="padding-left:15px">days</span>
+                                    <span class="simply-word" style="padding-left:30px">Hours</span>
+                                    <span class="simply-word" style="padding-left:20px">Minutes</span>
+                                    <span class="simply-word" style="padding-left:10px">Seconds</span>
                                 </div>
                             </div>
                         </div>
                         <p>
-                            <a href="#" class="btn btn-default btn-sm">Save the date</a>
+                            <a href="#invite" class="btn btn-default btn-sm">Save the date</a>
                         </p>
                     </div>
                 </div>
@@ -87,7 +67,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast">
                 <h2>Hello!</h2>
-                <h3>November 28th, 2016 New York, USA</h3>
+                <h3>August 28th, 2018 TG, India</h3>
                 <p>We invited you to celebrate our wedding</p>
             </div>
         </div>
@@ -97,9 +77,10 @@
                     <img src="../assets/images/bride.jpg" alt="groom" class="img-responsive">
                 </div>
                 <div class="desc-groom">
-                    <h3>Joefrey Mahusay</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                        blind texts. Separated they live in Bookmarksgrove</p>
+                    <h3>Raghu Pasunuri</h3>
+                    <p>“I cannot promise you an easy life, or that I will not disappoint you. I cannot promise that I will be
+                        the perfect husband. But I can promise you that I will choose to love you every day.”</p>
+
                 </div>
             </div>
             <!-- <p class="heart text-center">
@@ -110,26 +91,22 @@
                     <img src="../assets/images/groom.jpg" alt="groom" class="img-responsive">
                 </div>
                 <div class="desc-bride">
-                    <h3>Sheila Mahusay</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                        blind texts. Separated they live in Bookmarksgrove</p>
+                    <h3>Manisha</h3>
+                    <p>Being your wife has made me so happy. It’s even better than my most beautiful daydreams and my most favorite
+                        childhood fairytale. This one is real. Our love is real. Thank you for coming into my life. I love
+                        you so much!</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- <section>
-    <div class="background-img main-photo-resp" style="background: url(&quot;./img/main_photo.jpg&quot;);">
-        <img alt="" src="../assets/images/bride-groom.jpg" style="display: none;">
-    </div>
-</section> -->
-<section id="fh5co-event" class="event" id="wedding" style="background-image: url(&quot;../assets/images/img_bg_3.jpg&quot;); background-position: 0px 5.2px; background-repeat: no-repeat;"
+<section id="fh5co-event" class="event" id="wedding" style="background-image: url(&quot;../assets/images/img_bg_3.jpg&quot;); background-position: 0px 5.2px; background-repeat: no-repeat; background-size: cover;"
     data-stellar-background-ratio=0.5;>
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast">
-                <span>Our Special Events</span>
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast" style="margin-top:20px">
+                <span class="sp-event">Our Special Events</span>
                 <h2>Wedding Events</h2>
             </div>
         </div>
@@ -138,39 +115,38 @@
                 <div class="display-tc">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="col-md-6 col-sm-6 text-center">
-                            <div class="event-wrap animate-box fadeInUp animated-fast">
+                            <div class="event-wrap animate-box fadeInUp animated-fast" style="min-height:500px">
                                 <h3>Main Ceremony</h3>
                                 <div class="event-col">
                                     <i class="icon-clock"></i>
-                                    <span>4:00 PM</span>
-                                    <span>6:00 PM</span>
+                                    <span> Nov 24, 2017 ( Friday Night )</span>
+                                    <span>Muhurtham Time: 12.47 AM </span>
+                                    <span>Live starts at 6AM (PST), 8AM(CST), 7:30PM(IST)</span>
                                 </div>
+                                <h3>Address</h3>
                                 <div class="event-col">
                                     <i class="icon-calendar"></i>
-                                    <span>Monday 28</span>
-                                    <span>November, 2016</span>
+                                    <span> Jyothi Convention Hall</span>
+                                    <span>Near Benz circle, Vijayawada, AP, India</span>
                                 </div>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
-                                    of the Semantics, a large language ocean.</p>
+                                <p>We are very happy as we are getting married. Do us the honor by coming to our wedding party.</p>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6 text-center">
-                            <div class="eventy-wrap animate-box fadeInUp animated-fast">
-                                <h3>Wedding Party</h3>
+                            <div class="eventy-wrap animate-box fadeInUp animated-fast" style="min-height:500px">
+                                <h3>Reception</h3>
                                 <div class="event-col">
                                     <i class="icon-clock"></i>
-                                    <span>7:00 PM</span>
-                                    <span>12:00 AM</span>
+                                    <span> Nov 24, 2017 ( Friday Night )</span>
+                                    <span>Muhurtham Time: 12.47 AM </span>
                                 </div>
+                                <h3>Address</h3>
                                 <div class="event-col">
                                     <i class="icon-calendar"></i>
                                     <span>Monday 28</span>
                                     <span>November, 2016</span>
                                 </div>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
-                                    of the Semantics, a large language ocean.</p>
+                                <p>You're invited to attend our Reception Event. </p>
                             </div>
                         </div>
                     </div>
@@ -179,25 +155,35 @@
         </div>
     </div>
 </section>
-<section>
+<section id="album" class="photoalbum">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  text-center" style=" margin-top: 15px;">
                 <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
             </div>
         </div>
     </div>
-
 </section>
-<footer role="contentinfo">
+<section id="tq" class="end" style="background-image: url(&quot;../assets/images/gallery-9.jpg&quot;); background-position: 0px 5.2px; background-repeat: no-repeat; background-size: cover;">
+    <div class="overlay"></div>
     <div class="container">
-        <div class="row copyright">
-            <div class="col-md-12 text-center">
-                <p>
-                    <small class="block">© 2018 Raghu & Manisha. All Rights Reserved.</small>
-                </p>
+        <div class="row animate-box fadeInUp animated-fast">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Are You Attending?</h2>
+                <h4>Please book the date on your calendar as you are requested to be present at my wedding to shower us with
+                    your blessings. </h4>
+                <p>Thank you !!!!</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer class="footer pb-70 pt-70" style="margin: 30px 0">
+    <div class="container">
+        <div class="row">
+            <div class="text-center col-sm-12">
+                <p class="heavy uppercase normal">© 2018 Raghu & Manisha. All Rights Reserved.</p>
             </div>
         </div>
     </div>
 </footer>
-<!-- <countdown units="Year | Month | Days | Hours | Minutes | Seconds"  end="July 22, 2019"></countdown> -->

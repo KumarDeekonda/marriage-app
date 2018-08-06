@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     this.galleryOptions = [
       {
         width: '1200px',
-        height: '500px',
+        height: '800px',
         thumbnailsColumns: 4,
         imageAnimation: NgxGalleryAnimation.Fade,
         preview: true

@@ -14,26 +14,62 @@
     right: 0;
     background: rgba(0, 0, 0, 0.5);
   }
-  .display-tc {
-    color: #fff;
-    font-family: "Pacifico", cursive;
-    h1 {
-      margin-bottom: 0px;
-      line-height: 1.5;
-      font-size: 55px;
-    }
-    .btn {
-      margin-top: 20px;
-      padding: 20px 20px;
-      background: #fff !important;
-      color: #f14e95;
-      border: none !important;
-      font-size: 14px;
-      text-transform: uppercase;
+  .display-t {
+    display: table;
+    height: 900px;
+    width: 100%;
+    .display-tc {
+      color: #fff;
+      font-family: "Pacifico", cursive;
+      display: table-cell !important;
+      vertical-align: middle;
+      h1 {
+        margin-bottom: 0px;
+        line-height: 1.5;
+        font-size: 55px;
+      }
+      .btn {
+        margin-top: 20px;
+        padding: 20px 20px;
+        background: #fff !important;
+        color: #f14e95;
+        border: none !important;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      .simply-countdown {
+        margin-bottom: 2em;
+        > .simply-section {
+          display: inline-block;
+          // width: 100px;
+          // height: 100px;
+          width: 500px;
+          height: 150px;
+          background: rgba(241, 78, 149, 0.8);
+          margin: 0 4px;
+          border-radius: 20%;
+          position: relative;
+          animation: pulse 1s ease infinite;
+          .timer {
+            font-size: 60px;
+          }
+          .simply-amount {
+            display: block;
+            color: white;
+          }
+          .simply-word {
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            font-size: 12px;
+          }
+        }
+      }
     }
   }
 }
 .groom-bride {
+  min-height: 450px;
+
   h2 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -126,16 +162,27 @@
   }
 }
 .event {
+  position: relative;
+  .overlay {
+    z-index: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+  }
   h2 {
     margin-bottom: 10px;
     line-height: 1.5;
     font-weight: 700;
     color: #f14e95;
     font-family: "Sacramento";
+    font-size: 60px;
   }
-  span {
+  .sp-event {
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 24px;
     letter-spacing: 3px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.5);
@@ -150,30 +197,61 @@
       width: 100%;
     }
     .event-wrap {
-      border: 15px solid #b0f2d3;
+      border: 5px solid rgba(255, 255, 255, 0.5);
       background: rgba(255, 255, 255, 0.1);
       padding: 50px;
       width: 100%;
       float: left;
       border-radius: 4px;
       h3 {
-        color: #be9c16;
+        color: #b93a32;
         font-size: 30px;
         line-height: 25px;
+        font-weight: 700;
       }
     }
     .eventy-wrap {
-      border: 15px solid #eee0d5;
+      border: 5px solid rgba(255, 255, 255, 0.5);
       background: rgba(255, 255, 255, 0.1);
       padding: 50px;
       width: 100%;
       float: right;
       border-radius: 4px;
       h3 {
-        color: #be9c16;
+        color: #b93a32;
         font-size: 30px;
         line-height: 25px;
+        font-weight: 700;
       }
     }
+  }
+}
+.photoalbum {
+  background-color: #d3d3d3;
+}
+.end {
+  height: 900px;
+  width: 100%;
+  margin-top: -5px;
+  position: relative;
+  .overlay {
+    z-index: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+  }
+  h2,
+  p {
+    color: #fff;
+    font-family: "kristi";
+    font-size: 80px;
+  }
+  h4 {
+    color: #fff;
+    font-family: "Sacramento";
+    font-size: 50px;
   }
 }
