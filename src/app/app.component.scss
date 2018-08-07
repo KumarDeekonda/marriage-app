@@ -7,7 +7,7 @@
   width: 100%;
   .overlay {
     z-index: 0;
-    // position: absolute;
+    position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
@@ -75,7 +75,7 @@
     margin-bottom: 10px;
     line-height: 1.5;
     font-weight: 700;
-    color: #6caddf;
+    color: #FF5733;;
     font-family: "Sacramento";
   }
   p {
@@ -137,7 +137,8 @@
 
     h3 {
       font-size: 30px;
-      color: #6caddf;
+      color: #FF5733;
+      font-weight: 700;
       font-family: "Sacramento";
     }
     @media (max-width: 768px) {
@@ -191,6 +192,9 @@
     height: 700px;
     display: table;
     width: 100%;
+    .text{
+      color: #fff;
+    }
     .display-tc {
       height: 700px;
       display: table;
