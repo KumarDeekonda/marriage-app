@@ -16,34 +16,61 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.galleryOptions = [
       {
-          width: '600px',
-          height: '400px',
-          thumbnailsColumns: 4,
-          imageAnimation: NgxGalleryAnimation.Slide
+        width: '600px',
+        height: '700px',
+        thumbnailsColumns: 5,
+        imageAnimation: NgxGalleryAnimation.Zoom
+      },
+      {
+        breakpoint: 1480,
+        width: '100%',
+        height: '800px',
+        imagePercent: 80,
+        thumbnailsPercent: 20,
+        thumbnailsMargin: 20,
+        thumbnailMargin: 20
+      },
+      {
+        breakpoint: 1280,
+        width: '95%',
+        height: '800px',
+        imagePercent: 80,
+        thumbnailsPercent: 20,
+        thumbnailsMargin: 20,
+        thumbnailMargin: 20
+      },
+      {
+        breakpoint: 1024,
+        width: '100%',
+        height: '800px',
+        imagePercent: 80,
+        thumbnailsPercent: 20,
+        thumbnailsMargin: 20,
+        thumbnailMargin: 20
       },
       // max-width 800
       {
-          breakpoint: 800,
-          width: '100%',
-          height: '600px',
-          imagePercent: 80,
-          thumbnailsPercent: 20,
-          thumbnailsMargin: 20,
-          thumbnailMargin: 20
+        breakpoint: 800,
+        width: '100%',
+        height: '600px',
+        imagePercent: 80,
+        thumbnailsPercent: 20,
+        thumbnailsMargin: 20,
+        thumbnailMargin: 20
       },
       // max-width 400
       {
-          breakpoint: 400,
-          preview: false
+        breakpoint: 400,
+        preview: false
       },
       // max-width 320
       {
-          breakpoint: 320,
-          width: '100%',
-          height: '320px',
-          preview: false
+        breakpoint: 320,
+        width: '100%',
+        height: '320px',
+        preview: false
       }
-  ];
+    ];
     this.galleryImages = [
       {
         small: '../assets/images/bg2.jpg',
@@ -119,7 +146,8 @@ export class AppComponent implements OnInit {
         small: '../assets/images/evtt.jpg',
         medium: '../assets/images/evtt.jpg',
         big: '../assets/images/evtt.jpg'
-      },  {
+      },
+      {
         small: '../assets/images/gallery-1.jpg',
         medium: '../assets/images/gallery-1.jpg',
         big: '../assets/images/gallery-1.jpg'
