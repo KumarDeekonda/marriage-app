@@ -209,7 +209,7 @@
         }
       }
       .desc-groom {
-        padding-right: 20px;
+        padding-right: 30px;
         text-align: right;
       }
       .bride {
@@ -265,6 +265,7 @@
       font-family: "Dancing Script";
       font-size: 22px;
       font-weight: 500;
+      margin-bottom: 15px;
     }
     .display-tc {
       height: 700px;
@@ -284,6 +285,7 @@
         line-height: 25px;
         font-weight: 700;
         font-family: "Sacramento";
+        margin-bottom: 20px;
       }
     }
     .eventy-wrap {
@@ -300,6 +302,8 @@
         line-height: 25px;
         font-weight: 700;
         font-family: "Sacramento";
+        margin-bottom: 20px;
+        margin-top: 30px;
       }
     }
   }
@@ -377,6 +381,7 @@
     .display-t {
       .text {
         font-size: 20px;
+        margin-bottom: 15px;
       }
       .event-wrap {
         padding: 5px;
@@ -385,6 +390,7 @@
         h3 {
           font-size: 35px !important;
           line-height: 30px !important;
+          margin-bottom: 20px;
         }
       }
       .eventy-wrap {
@@ -395,6 +401,7 @@
         h3 {
           font-size: 35px !important;
           line-height: 30px !important;
+          margin-bottom: 20px;
         }
       }
     }
@@ -409,4 +416,41 @@
       margin: 40px 0;
     }
   }
+}
+
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.gototop.active {
+  opacity: 1;
+  visibility: visible;
+}
+.gototop a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.gototop a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.gototop a:hover, .gototop a:active, .gototop a:focus {
+  text-decoration: none;
+  outline: none;
 }

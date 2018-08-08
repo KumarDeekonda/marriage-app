@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import {
   NgxGalleryOptions,
   NgxGalleryImage,
@@ -13,17 +13,80 @@ export class AppComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
   title = 'app';
+  @HostListener('window:resize', ['$event'])
+
+  onResize(event) {
+    if (window.matchMedia('(min-width: 769px)').matches) {
+      this.galleryOptions = [
+        {
+          width: '1200px',
+          height: '700px',
+          thumbnailsColumns: 3,
+          imageAnimation: NgxGalleryAnimation.Zoom
+        },
+        {
+          breakpoint: 1492,
+          width: '150%',
+          height: '800px',
+          imagePercent: 80,
+          thumbnailsPercent: 20,
+          thumbnailsMargin: 20,
+          thumbnailMargin: 20
+        },
+        {
+          breakpoint: 1280,
+          width: '95%',
+          height: '800px',
+          imagePercent: 80,
+          thumbnailsPercent: 20,
+          thumbnailsMargin: 20,
+          thumbnailMargin: 20
+        },
+        {
+          breakpoint: 1024,
+          width: '100%',
+          height: '800px',
+          imagePercent: 80,
+          thumbnailsPercent: 20,
+          thumbnailsMargin: 20,
+          thumbnailMargin: 20
+        },
+        // max-width 800
+        {
+          breakpoint: 800,
+          width: '100%',
+          height: '600px',
+          imagePercent: 80,
+          thumbnailsPercent: 20,
+          thumbnailsMargin: 20,
+          thumbnailMargin: 20
+        },
+        // max-width 400
+        {
+          breakpoint: 400,
+          preview: false
+        },
+        // max-width 320
+        {
+          breakpoint: 320,
+          width: '100%',
+          height: '320px',
+          preview: false
+        }
+      ];
+  }
+}
   ngOnInit(): void {
     this.galleryOptions = [
       {
-        width: '600px',
+        width: '1200px',
         height: '700px',
         thumbnailsColumns: 5,
         imageAnimation: NgxGalleryAnimation.Zoom
       },
       {
-        breakpoint: 1480,
-        width: '100%',
+        breakpoint: 1492,
+        width: '95%',
         height: '800px',
         imagePercent: 80,
         thumbnailsPercent: 20,
