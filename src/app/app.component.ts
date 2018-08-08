@@ -16,39 +16,34 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.galleryOptions = [
       {
-        width: '1200px',
-        height: '800px',
-        thumbnailsColumns: 4,
-        imageAnimation: NgxGalleryAnimation.Fade,
-        preview: true
+          width: '600px',
+          height: '400px',
+          thumbnailsColumns: 4,
+          imageAnimation: NgxGalleryAnimation.Slide
       },
       // max-width 800
       {
-        breakpoint: 800,
-        width: '100%',
-        height: '600px',
-        imagePercent: 80,
-        thumbnailsPercent: 20,
-        thumbnailsMargin: 20,
-        thumbnailMargin: 20
+          breakpoint: 800,
+          width: '100%',
+          height: '600px',
+          imagePercent: 80,
+          thumbnailsPercent: 20,
+          thumbnailsMargin: 20,
+          thumbnailMargin: 20
       },
-       // max-width 700
-       {
-        breakpoint: 700,
-        width: '100%',
-        height: '600px',
-        imagePercent: 80,
-        thumbnailsPercent: 20,
-        thumbnailsMargin: 20,
-        thumbnailMargin: 20
-      },
-      // max-width 480
+      // max-width 400
       {
-        breakpoint: 400,
-        preview: false
+          breakpoint: 400,
+          preview: false
+      },
+      // max-width 320
+      {
+          breakpoint: 320,
+          width: '100%',
+          height: '320px',
+          preview: false
       }
-    ];
-
+  ];
     this.galleryImages = [
       {
         small: '../assets/images/bg2.jpg',

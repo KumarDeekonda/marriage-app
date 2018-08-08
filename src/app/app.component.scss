@@ -41,8 +41,6 @@
         margin-bottom: 2em;
         > .simply-section {
           display: inline-block;
-          // width: 100px;
-          // height: 100px;
           width: 500px;
           height: 150px;
           background: rgba(241, 78, 149, 0.8);
@@ -75,7 +73,7 @@
     margin-bottom: 10px;
     line-height: 1.5;
     font-weight: 700;
-    color: #FF5733;;
+    color: #ff5733;
     font-family: "Sacramento";
   }
   p {
@@ -137,13 +135,17 @@
 
     h3 {
       font-size: 30px;
-      color: #FF5733;
+      color: #ff5733;
       font-weight: 700;
       font-family: "Sacramento";
     }
     @media (max-width: 768px) {
       .groom {
         margin-right: 5px;
+        img {
+          margin-bottom: 15px;
+          margin: 0px 10px 15px 10px;
+        }
       }
       .desc-groom {
         padding-right: 20px;
@@ -151,6 +153,10 @@
       }
       .bride {
         margin-left: 5px;
+        img {
+          margin-bottom: 15px;
+          margin: 0px 10px 15px 10px;
+        }
       }
       .desc-bride {
         padding-left: 20px;
@@ -186,14 +192,18 @@
     font-size: 24px;
     letter-spacing: 3px;
     font-weight: 700;
-    color: rgba(0, 0, 0, 0.5);
+    font-family: "Righteous";
+    color: lemonchiffon;
   }
   .display-t {
     height: 700px;
     display: table;
     width: 100%;
-    .text{
+    .text {
       color: #fff;
+      font-family: "Dancing Script";
+      font-size: 22px;
+      font-weight: 500;
     }
     .display-tc {
       height: 700px;
@@ -208,10 +218,11 @@
       float: left;
       border-radius: 4px;
       h3 {
-        color: #b93a32;
-        font-size: 30px;
+        color: burlywood;
+        font-size: 45px;
         line-height: 25px;
         font-weight: 700;
+        font-family: "Sacramento";
       }
     }
     .eventy-wrap {
@@ -221,11 +232,13 @@
       width: 100%;
       float: right;
       border-radius: 4px;
+
       h3 {
-        color: #b93a32;
-        font-size: 30px;
+        color: burlywood;
+        font-size: 45px;
         line-height: 25px;
         font-weight: 700;
+        font-family: "Sacramento";
       }
     }
   }
@@ -252,10 +265,87 @@
     color: #fff;
     font-family: "kristi";
     font-size: 80px;
+    margin: 40px 0;
   }
   h4 {
     color: #fff;
     font-family: "Sacramento";
     font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .cover-page {
+    .display-t {
+      display: table;
+      height: 500px;
+
+      .display-tc {
+        h1 {
+          margin-top: 20px !important;
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 25px;
+        }
+        .btn {
+          padding: 15px 15px;
+
+          font-size: 12px;
+        }
+        .simply-countdown {
+          margin-bottom: 2em;
+          > .simply-section {
+            width: 285px;
+            height: 100px;
+            .timer {
+              font-size: 45px;
+            }
+            .simply-word {
+              font-size: 10px;
+              padding-left: 15px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .event {
+    h2 {
+      font-size: 40px;
+    }
+    .display-t {
+      .text {
+        font-size: 20px;
+      }
+      .event-wrap {
+        padding: 5px;
+        margin-bottom: 15px;
+
+        h3 {
+          font-size: 35px !important;
+          line-height: 30px !important;
+        }
+      }
+      .eventy-wrap {
+        padding: 5px;
+
+        margin-bottom: 15px;
+
+        h3 {
+          font-size: 35px !important;
+          line-height: 30px !important;
+        }
+      }
+    }
+  }
+  .end {
+    h2,
+    p {
+      font-size: 50px;
+    }
+    h4 {
+      font-size: 35px;
+      margin: 40px 0;
+    }
   }
 }
