@@ -82,14 +82,14 @@
     color: #828282;
     font-family: "Dancing Script";
   }
-  .heart{
+  .heart {
     position: relative;
     width: 100px;
     height: 0px;
     float: left;
-}
-.heart:before,
-.heart:after{
+  }
+  .heart:before,
+  .heart:after {
     position: absolute;
     content: "";
     left: 0px;
@@ -100,31 +100,31 @@
     -moz-border-radius: 50px 50px 0 0;
     border-radius: 50px 50px 0 0;
     -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     -webkit-transform-origin: 0 100%;
-       -moz-transform-origin: 0 100%;
-        -ms-transform-origin: 0 100%;
-         -o-transform-origin: 0 100%;
-            transform-origin: 0 100%;
-            margin-top: 50px;
-}
-.heart:after{
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    margin-top: 50px;
+  }
+  .heart:after {
     left: -30px;
     margin-top: 50px;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
     -webkit-transform-origin: 100% 100%;
-       -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100%;
-         -o-transform-origin: 100% 100%;
-            transform-origin :100% 100%;
-}
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
 
   // .heart {
   //   position: absolute;
@@ -196,11 +196,13 @@
 
     h3 {
       font-size: 30px;
-      color: #ff5733;
+      color: #f14e95;
+      //       #ff5733;
       font-weight: 700;
       font-family: "Sacramento";
     }
     @media (max-width: 768px) {
+     
       .groom {
         margin-right: 5px;
         img {
@@ -262,8 +264,8 @@
     width: 100%;
     .text {
       color: #fff;
-      font-family: "Dancing Script";
-      font-size: 22px;
+      font-family: "Righteous";
+      font-size: 20px;
       font-weight: 500;
       margin-bottom: 15px;
     }
@@ -280,7 +282,7 @@
       float: left;
       border-radius: 4px;
       h3 {
-        color: burlywood;
+        color: salmon;
         font-size: 45px;
         line-height: 25px;
         font-weight: 700;
@@ -297,7 +299,7 @@
       border-radius: 4px;
 
       h3 {
-        color: burlywood;
+        color: salmon;
         font-size: 45px;
         line-height: 25px;
         font-weight: 700;
@@ -330,7 +332,7 @@
     color: #fff;
     font-family: "kristi";
     font-size: 80px;
-    margin: 40px 0;
+    margin: 22% 0 20px 0;
   }
   h4 {
     color: #fff;
@@ -339,7 +341,10 @@
   }
 }
 @media (max-width: 768px) {
-  .cover-page {
+  .groom-bride .couple-half h3{
+    font-size: 27px;
+  }
+    .cover-page {
     .display-t {
       display: table;
       height: 500px;
@@ -380,8 +385,11 @@
     }
     .display-t {
       .text {
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 15px;
+      }
+      #x{
+        min-height: 500px;
       }
       .event-wrap {
         padding: 5px;
@@ -410,6 +418,7 @@
     h2,
     p {
       font-size: 50px;
+      margin: 30% 0 40px 0;
     }
     h4 {
       font-size: 35px;
@@ -450,7 +459,9 @@
   display: table-cell;
   vertical-align: middle;
 }
-.gototop a:hover, .gototop a:active, .gototop a:focus {
+.gototop a:hover,
+.gototop a:active,
+.gototop a:focus {
   text-decoration: none;
   outline: none;
 }
