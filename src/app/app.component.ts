@@ -14,20 +14,19 @@ export class AppComponent implements OnInit {
   galleryImages: NgxGalleryImage[];
   title = 'app';
   @HostListener('window:resize', ['$event'])
-
   onResize(event) {
     if (window.matchMedia('(min-width: 769px)').matches) {
       this.galleryOptions = [
         {
-          width: '1200px',
-          height: '700px',
+          width: '700px',
+          height: '500px',
           thumbnailsColumns: 3,
           imageAnimation: NgxGalleryAnimation.Zoom
         },
         {
           breakpoint: 1492,
           width: '150%',
-          height: '800px',
+          height: '500px',
           imagePercent: 80,
           thumbnailsPercent: 20,
           thumbnailsMargin: 20,
@@ -36,7 +35,7 @@ export class AppComponent implements OnInit {
         {
           breakpoint: 1280,
           width: '95%',
-          height: '800px',
+          height: '500px',
           imagePercent: 80,
           thumbnailsPercent: 20,
           thumbnailsMargin: 20,
@@ -45,7 +44,7 @@ export class AppComponent implements OnInit {
         {
           breakpoint: 1024,
           width: '100%',
-          height: '800px',
+          height: '500px',
           imagePercent: 80,
           thumbnailsPercent: 20,
           thumbnailsMargin: 20,
@@ -55,7 +54,7 @@ export class AppComponent implements OnInit {
         {
           breakpoint: 800,
           width: '100%',
-          height: '600px',
+          height: '500px',
           imagePercent: 80,
           thumbnailsPercent: 20,
           thumbnailsMargin: 20,
@@ -74,10 +73,11 @@ export class AppComponent implements OnInit {
           preview: false
         }
       ];
+    }
   }
-}
   ngOnInit(): void {
-    this.galleryOptions = [
+       this.getScript();
+           this.galleryOptions = [
       {
         width: '1200px',
         height: '700px',
@@ -191,11 +191,6 @@ export class AppComponent implements OnInit {
         big: '../assets/images/couple-4.jpg'
       },
       {
-        small: '../assets/images/cover-img.jpg',
-        medium: '../assets/images/cover-img.jpg',
-        big: '../assets/images/cover-img.jpg'
-      },
-      {
         small: '../assets/images/evnt.jpg',
         medium: '../assets/images/evnt.jpg',
         big: '../assets/images/evnt.jpg'
@@ -232,4 +227,24 @@ export class AppComponent implements OnInit {
       }
     ];
   }
-}
+    getScript() {
+      const deadline = new Date('Aug 29, 2018 11:37:25').getTime();
+      const x = setInterval(function() {
+      const now = new Date().getTime();
+      const t = deadline - now;
+      const days = Math.floor(t / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((t % (1000 * 60)) / 1000);
+         document.getElementById('days').innerHTML = days + '';
+         document.getElementById('hrs').innerHTML = hours + '';
+         document.getElementById('min').innerHTML = minutes + '';
+         document.getElementById('sec').innerHTML = seconds + '';
+          if (t < 0) {
+              clearInterval(x);
+              document.getElementById('demo').innerHTML = '00' + ':' + '00' + ':' + '00' + ':' + '00';
+          }
+      }, 1000);
+         }
+  }
+

@@ -41,19 +41,26 @@
         margin-bottom: 2em;
         > .simply-section {
           display: inline-block;
-          width: 500px;
-          height: 150px;
+          width: 100px;
+          height: 100px;
           background: rgba(241, 78, 149, 0.8);
           margin: 0 4px;
-          border-radius: 20%;
+          border-radius: 50%;
           position: relative;
           animation: pulse 1s ease infinite;
+          >div{
+            display: table-cell;
+            vertical-align: middle;
+            width: 100px;
+            height: 100px;
+          }
           .timer {
             font-size: 60px;
           }
           .simply-amount {
             display: block;
             color: white;
+            font-size: 30px;
           }
           .simply-word {
             color: rgba(255, 255, 255, 0.7);
@@ -365,8 +372,8 @@
         .simply-countdown {
           margin-bottom: 2em;
           > .simply-section {
-            width: 285px;
-            height: 100px;
+            width: 105px;
+            height: 105px;
             .timer {
               font-size: 45px;
             }
@@ -464,4 +471,11 @@
 .gototop a:focus {
   text-decoration: none;
   outline: none;
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+  .event{
+    #x{
+      height: 740px;
+    }
+  }
 }
