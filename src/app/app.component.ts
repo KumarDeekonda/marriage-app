@@ -76,8 +76,8 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit(): void {
-       this.getScript();
-           this.galleryOptions = [
+    this.getScript();
+    this.galleryOptions = [
       {
         width: '1200px',
         height: '700px',
@@ -242,9 +242,21 @@ export class AppComponent implements OnInit {
          document.getElementById('sec').innerHTML = seconds + '';
           if (t < 0) {
               clearInterval(x);
-              document.getElementById('demo').innerHTML = '00' + ':' + '00' + ':' + '00' + ':' + '00';
+              const y = setInterval(function() {
+                const nw = new Date().getTime();
+                const time = -deadline + nw;
+                const dys = Math.floor(time / (1000 * 60 * 60 * 24));
+                const hrs = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const mins = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+                const secs = Math.floor((time % (1000 * 60)) / 1000);
+                document.getElementById('days').innerHTML = dys + '';
+                document.getElementById('hrs').innerHTML = hrs + '';
+                document.getElementById('min').innerHTML = mins + '';
+                document.getElementById('sec').innerHTML = secs + '';
+                document.getElementById('life').innerHTML = 'My New Life Count Begins';
+              } , 1000);
           }
       }, 1000);
-         }
+    }
   }
 
