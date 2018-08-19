@@ -76,7 +76,7 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit(): void {
-    this.getScript();
+    this.getCountDownTimerScript();
     this.galleryOptions = [
       {
         width: '1200px',
@@ -227,8 +227,8 @@ export class AppComponent implements OnInit {
       }
     ];
   }
-    getScript() {
-      const deadline = new Date('Aug 29, 2018 11:37:25').getTime();
+    getCountDownTimerScript() {
+      const deadline = new Date('Aug 29, 2018 10:04:00').getTime();
       const x = setInterval(function() {
       const now = new Date().getTime();
       const t = deadline - now;
