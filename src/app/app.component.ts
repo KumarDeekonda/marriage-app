@@ -136,95 +136,95 @@ export class AppComponent implements OnInit {
     ];
     this.galleryImages = [
       {
-        small: '../assets/images/bg2.jpg',
-        medium: '../assets/images/bg2.jpg',
-        big: '../assets/images/bg2.jpg'
+        small: '../assets/images/pic6.JPG',
+        medium: '../assets/images/pic6.JPG',
+        big: '../assets/images/pic6.JPG'
       },
       {
-        small: '../assets/images/bg3.jpg',
-        medium: '../assets/images/bg3.jpg',
-        big: '../assets/images/bg3.jpg'
+        small: '../assets/images/pic4.JPG',
+        medium: '../assets/images/pic4.JPG',
+        big: '../assets/images/pic4.JPG'
       },
       {
-        small: '../assets/images/bg4.jpg',
-        medium: '../assets/images/bg4.jpg',
-        big: '../assets/images/bg4.jpg'
+        small: '../assets/images/pic5.JPG',
+        medium: '../assets/images/pic5.JPG',
+        big: '../assets/images/pic5.JPG'
       },
       {
-        small: '../assets/images/bg5.jpg',
-        medium: '../assets/images/bg5.jpg',
-        big: '../assets/images/bg5.jpg'
+        small: '../assets/images/pic3.JPG',
+        medium: '../assets/images/pic3.JPG',
+        big: '../assets/images/pic3.JPG'
       },
       {
-        small: '../assets/images/bg6.jpg',
-        medium: '../assets/images/bg6.jpg',
-        big: '../assets/images/bg6.jpg'
+        small: '../assets/images/pic7.JPG',
+        medium: '../assets/images/pic7.JPG',
+        big: '../assets/images/pic7.JPG'
       },
       {
-        small: '../assets/images/bride.jpg',
-        medium: '../assets/images/bride.jpg',
-        big: '../assets/images/bride.jpg'
+        small: '../assets/images/pic1.JPG',
+        medium: '../assets/images/pic1.JPG',
+        big: '../assets/images/pic1.JPG'
       },
       {
-        small: '../assets/images/groom.jpg',
-        medium: '../assets/images/groom.jpg',
-        big: '../assets/images/groom.jpg'
-      },
-      {
-        small: '../assets/images/couple-1.jpg',
-        medium: '../assets/images/couple-1.jpg',
-        big: '../assets/images/couple-1.jpg'
-      },
-      {
-        small: '../assets/images/couple-2.jpg',
-        medium: '../assets/images/couple-2.jpg',
-        big: '../assets/images/couple-2.jpg'
-      },
-      {
-        small: '../assets/images/couple-3.jpg',
-        medium: '../assets/images/couple-3.jpg',
-        big: '../assets/images/couple-3.jpg'
-      },
-      {
-        small: '../assets/images/couple-4.jpg',
-        medium: '../assets/images/couple-4.jpg',
-        big: '../assets/images/couple-4.jpg'
-      },
-      {
-        small: '../assets/images/evnt.jpg',
-        medium: '../assets/images/evnt.jpg',
-        big: '../assets/images/evnt.jpg'
-      },
-      {
-        small: '../assets/images/evt.jpg',
-        medium: '../assets/images/evt.jpg',
-        big: '../assets/images/evt.jpg'
-      },
-      {
-        small: '../assets/images/evtt.jpg',
-        medium: '../assets/images/evtt.jpg',
-        big: '../assets/images/evtt.jpg'
-      },
-      {
-        small: '../assets/images/gallery-1.jpg',
-        medium: '../assets/images/gallery-1.jpg',
-        big: '../assets/images/gallery-1.jpg'
-      },
-      {
-        small: '../assets/images/gallery-2.jpg',
-        medium: '../assets/images/gallery-2.jpg',
-        big: '../assets/images/gallery-2.jpg'
-      },
-      {
-        small: '../assets/images/gallery-3.jpg',
-        medium: '../assets/images/gallery-3.jpg',
-        big: '../assets/images/gallery-3.jpg'
-      },
-      {
-        small: '../assets/images/gallery-4.jpg',
-        medium: '../assets/images/gallery-4.jpg',
-        big: '../assets/images/gallery-4.jpg'
+        small: '../assets/images/pic2.jpg',
+        medium: '../assets/images/pic2.jpg',
+        big: '../assets/images/pic2.jpg'
       }
+      // {
+      //   small: '../assets/images/couple-1.jpg',
+      //   medium: '../assets/images/couple-1.jpg',
+      //   big: '../assets/images/couple-1.jpg'
+      // },
+      // {
+      //   small: '../assets/images/c.jpg',
+      //   medium: '../assets/images/couple-2.jpg',
+      //   big: '../assets/images/couple-2.jpg'
+      // },
+      // {
+      //   small: '../assets/images/couple-3.jpg',
+      //   medium: '../assets/images/couple-3.jpg',
+      //   big: '../assets/images/couple-3.jpg'
+      // },
+      // {
+      //   small: '../assets/images/couple-4.jpg',
+      //   medium: '../assets/images/couple-4.jpg',
+      //   big: '../assets/images/couple-4.jpg'
+      // },
+      // {
+      //   small: '../assets/images/evnt.jpg',
+      //   medium: '../assets/images/evnt.jpg',
+      //   big: '../assets/images/evnt.jpg'
+      // },
+      // {
+      //   small: '../assets/images/evt.jpg',
+      //   medium: '../assets/images/evt.jpg',
+      //   big: '../assets/images/evt.jpg'
+      // },
+      // {
+      //   small: '../assets/images/evtt.jpg',
+      //   medium: '../assets/images/evtt.jpg',
+      //   big: '../assets/images/evtt.jpg'
+      // },
+      // {
+      //   small: '../assets/images/gallery-1.jpg',
+      //   medium: '../assets/images/gallery-1.jpg',
+      //   big: '../assets/images/gallery-1.jpg'
+      // },
+      // {
+      //   small: '../assets/images/gallery-2.jpg',
+      //   medium: '../assets/images/gallery-2.jpg',
+      //   big: '../assets/images/gallery-2.jpg'
+      // },
+      // {
+      //   small: '../assets/images/gallery-3.jpg',
+      //   medium: '../assets/images/gallery-3.jpg',
+      //   big: '../assets/images/gallery-3.jpg'
+      // },
+      // {
+      //   small: '../assets/images/gallery-4.jpg',
+      //   medium: '../assets/images/gallery-4.jpg',
+      //   big: '../assets/images/gallery-4.jpg'
+      // }
     ];
   }
     getCountDownTimerScript() {
