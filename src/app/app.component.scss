@@ -5,7 +5,10 @@
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
+ 
+  
   .overlay {
+
     z-index: 0;
     position: absolute;
     bottom: 0;
@@ -274,7 +277,7 @@
       font-family: "Righteous";
       font-size: 20px;
       font-weight: 500;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
     .display-tc {
       height: 700px;

@@ -136,40 +136,134 @@ export class AppComponent implements OnInit {
     ];
     this.galleryImages = [
       {
-        small: '../assets/images/pic6.JPG',
-        medium: '../assets/images/pic6.JPG',
-        big: '../assets/images/pic6.JPG'
+        small: '../assets/images/pa/1.JPG',
+        medium: '../assets/images/pa/1.JPG',
+        big: '../assets/images/pa/1.JPG'
       },
       {
-        small: '../assets/images/pic4.JPG',
-        medium: '../assets/images/pic4.JPG',
-        big: '../assets/images/pic4.JPG'
+        small: '../assets/images/pa/2.JPG',
+        medium: '../assets/images/pa/2.JPG',
+        big: '../assets/images/pa/2.JPG'
       },
       {
-        small: '../assets/images/pic5.JPG',
-        medium: '../assets/images/pic5.JPG',
-        big: '../assets/images/pic5.JPG'
+        small: '../assets/images/pa/3.JPG',
+        medium: '../assets/images/pa/3.JPG',
+        big: '../assets/images/pa/3.JPG'
       },
       {
-        small: '../assets/images/pic3.JPG',
-        medium: '../assets/images/pic3.JPG',
-        big: '../assets/images/pic3.JPG'
+        small: '../assets/images/pa/4.JPG',
+        medium: '../assets/images/pa/4.JPG',
+        big: '../assets/images/pa/4.JPG'
+      },
+
+      {
+        small: '../assets/images/pa/5.JPG',
+        medium: '../assets/images/pa/5.JPG',
+        big: '../assets/images/pa/5.JPG'
+      },{
+        small: '../assets/images/pa/6.JPG',
+        medium: '../assets/images/pa/6.JPG',
+        big: '../assets/images/pa/6.JPG'
       },
       {
-        small: '../assets/images/pic7.JPG',
-        medium: '../assets/images/pic7.JPG',
-        big: '../assets/images/pic7.JPG'
+        small: '../assets/images/pa/7.JPG',
+        medium: '../assets/images/pa/7.JPG',
+        big: '../assets/images/pa/7.JPG'
       },
       {
-        small: '../assets/images/pic1.JPG',
-        medium: '../assets/images/pic1.JPG',
-        big: '../assets/images/pic1.JPG'
+        small: '../assets/images/pa/8.JPG',
+        medium: '../assets/images/pa/8.JPG',
+        big: '../assets/images/pa/8.JPG'
       },
       {
-        small: '../assets/images/pic2.jpg',
-        medium: '../assets/images/pic2.jpg',
-        big: '../assets/images/pic2.jpg'
-      }
+        small: '../assets/images/pa/9.JPG',
+        medium: '../assets/images/pa/9.JPG',
+        big: '../assets/images/pa/9.JPG'
+      },
+      {
+        small: '../assets/images/pa/10.JPG',
+        medium: '../assets/images/pa/10.JPG',
+        big: '../assets/images/pa/10.JPG'
+      },{
+        small: '../assets/images/pa/11.JPG',
+        medium: '../assets/images/pa/11.JPG',
+        big: '../assets/images/pa/11.JPG'
+      },
+      {
+        small: '../assets/images/pa/12.JPG',
+        medium: '../assets/images/pa/12.JPG',
+        big: '../assets/images/pa/12.JPG'
+      },
+      // {
+      //   small: '../assets/images/pa/1.JPG',
+      //   medium: '../assets/images/pa/1.JPG',
+      //   big: '../assets/images/pa/1.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pa/1.JPG',
+      //   medium: '../assets/images/pa/1.JPG',
+      //   big: '../assets/images/pa/1.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pa/1.JPG',
+      //   medium: '../assets/images/pa/1.JPG',
+      //   big: '../assets/images/pa/1.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pa/1.JPG',
+      //   medium: '../assets/images/pa/1.JPG',
+      //   big: '../assets/images/pa/1.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pa/1.JPG',
+      //   medium: '../assets/images/pa/1.JPG',
+      //   big: '../assets/images/pa/1.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pa/1.JPG',
+      //   medium: '../assets/images/pa/1.JPG',
+      //   big: '../assets/images/pa/1.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pa/1.JPG',
+      //   medium: '../assets/images/pa/1.JPG',
+      //   big: '../assets/images/pa/1.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pa/1.JPG',
+      //   medium: '../assets/images/pa/1.JPG',
+      //   big: '../assets/images/pa/1.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pa/pic4.JPG',
+      //   medium: '../assets/images/pic4.JPG',
+      //   big: '../assets/images/pic4.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pic5.JPG',
+      //   medium: '../assets/images/pic5.JPG',
+      //   big: '../assets/images/pic5.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pic3.JPG',
+      //   medium: '../assets/images/pic3.JPG',
+      //   big: '../assets/images/pic3.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pic7.JPG',
+      //   medium: '../assets/images/pic7.JPG',
+      //   big: '../assets/images/pic7.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pic1.JPG',
+      //   medium: '../assets/images/pic1.JPG',
+      //   big: '../assets/images/pic1.JPG'
+      // },
+      // {
+      //   small: '../assets/images/pic2.jpg',
+      //   medium: '../assets/images/pic2.jpg',
+      //   big: '../assets/images/pic2.jpg'
+      // }
       // {
       //   small: '../assets/images/couple-1.jpg',
       //   medium: '../assets/images/couple-1.jpg',
@@ -228,7 +322,7 @@ export class AppComponent implements OnInit {
     ];
   }
     getCountDownTimerScript() {
-      const deadline = new Date('Aug 29, 2018 10:04:00').getTime();
+      const deadline = new Date('May 29, 2019 11:15:00').getTime();
       const x = setInterval(function() {
       const now = new Date().getTime();
       const t = deadline - now;
